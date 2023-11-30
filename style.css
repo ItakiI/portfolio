@@ -1,0 +1,54 @@
+
+
+*{
+   margin: 0;
+   padding: 0;
+}
+   header {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: stretch;
+      background-color: black;
+}
+
+img {
+   border-radius: 50%;
+   height: 7rem;
+   width: 7rem;  
+}
+
+nav{
+   display: flex;
+   flex-direction: row;
+   /* text-align: center; */
+}
+ul {  
+   list-style-type: none;
+   transform: skewX(-30deg);
+   background: #ffd900d6;
+   vertical-align: center;
+
+}
+    li{
+       height: 20vh;
+    width: 7vw;   
+    
+    text-align: center;
+    
+      margin-top: 45%;
+      color: white;
+      /* transform: initial; */ 
+
+   }
+   p {
+      transform: skewX(30deg);
+   }
+     
+
+
+
+}
