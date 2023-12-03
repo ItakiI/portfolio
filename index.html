@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>myPortfolio</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <a href="#" class="logo">Logo</a>
-      <input type="checkbox" id="check" />
-      <label for="check" class="icons">
-        <i class="bx bx-menu" id="menuIcon"></i>
-        <i class="bx bx-x" id="closeIcon"></i>
-      </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+  <title>myPortfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-      <nav class="navBar">
-        <a href="#" style="--i: 0">Home</a>
-        <a href="#" style="--i: 1">About</a>
-        <a href="#" style="--i: 2">Experience</a
-        ><a href="#" style="--i: 3">Contact</a>
-        <a href="#" style="--i: 4">myCV</a>
-      </nav>
-    </header>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Logo</a>
+    <input type="checkbox" id="check" />
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menuIcon"></i>
+      <i class="bx bx-x" id="closeIcon"></i>
+    </label>
 
-    <main></main>
-    <footer></footer>
-  </body>
+    <nav class="navBar">
+      <a href="#home" style="--i: 0">Home</a>
+      <a href="#" style="--i: 1">About</a>
+      <a href="#" style="--i: 2">Experience</a><a href="#" style="--i: 3">Contact</a>
+      <!-- <a href="#" style="--i: 4">myCV</a> -->
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="home">
+      <div class="homeContent">
+        <h1>Hi there! I'm taki</h1>
+        <h3>Junior web developper</h3>
+        <p> passion and innovation defines my journey, confidently making my baby steps towards crafting digital
+          experiences that captivate and solutions that resonate . </p>
+        <div class="homeSM">
+          <a href="https://github.com/ItakiI" target='_blank'><i class='bx bxl-github'></i></a>
+          <a href="#" target='_blank'><i class='bx bxl-facebook-circle'></i></a>
+          <a href="#" target='_blank'><i class='bx bxl-instagram-alt'></i></a>
+          <a href="#" target='_blank'><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <a href="#" class="btn"> My CV </a>
+      </div>
+      <div class="homeImage"></div>
+    </section>
+
+    <section id="About">
+
+    </section>
+
+  </main>
+  <footer></footer>
+</body>
+
 </html>

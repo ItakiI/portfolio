@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Oxanium:wght@800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    height: 100dvh;
+}
+
+#home {
+    height: 100dvh;
+    /* background: linear-gradient(90deg, #031321ea 70%, #186e81e7 30% ); */
+    display: flex;
+    background: #031321f6;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.homeImage {
+    height: 400PX;
+    width: 400px;
+    background: red;
+    border-radius: 50%;
+}
+
+.homeContent {
+    max-width: 600px;
+    color: white;
+    text-align: left;
+    
+}
+
+.homeContent h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.homeContent h3 {
+    font-size: 30px;
+    color: #06c4efe3;
+    /* add outline */
+    -webkit-text-stroke: .4px white;
+}
+.homeContent p {
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.homeSM{
+    margin: 35px 0 40px;
+}
+.homeSM a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height:37px;
+    color: #06c4efe3;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.homeSM a:hover {
+   color: white;
+   background: #2dd8fe76;
+   border:#2dd9fe ;
+  box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe;
+}
+
+.btn {
+    padding: 10px 25px;
+    background: #06c4efe3;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: .5px;
+    border-radius: 20px;    
+}
+.btn:hover {
+    color: white;
+    background: #2dd8fe76;
+    border:#2dd9fe ;
+   box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe, 0 0 20px #2dd9fe;
+}

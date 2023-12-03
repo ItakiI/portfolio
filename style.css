@@ -8,8 +8,8 @@
 }
 
 body {
-  min-height: 100vh;
-  background: #031321ea;
+  /* min-height: 100vh;
+  background: #031321ea; */
   /* background: url("assets/images/pexels-pixabay.png") no-repeat; */
   /* background-size: cover; */
   /* background-position: center; */
@@ -20,7 +20,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.7rem 10%;
+  padding: 1.3rem 10%;
   /* color and opasity */
   /* background: rgb(0, 0, 0, 0.3); */
   /*set special effect*/
@@ -29,6 +29,9 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+.navBar {
+  z-index: 101;
 }
 
 .header::before {
@@ -53,13 +56,11 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transition: 1s;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
+  transition: 0.8s;
   transition-delay: 0.1s;
 }
 
@@ -80,7 +81,8 @@ header:hover::after {
   color: white;
   text-decoration: none;
   font: 500;
-  margin-left: 2rem;
+  padding: 10px 25px;
+  margin-left: 1.5rem;
   transition: 0.3s;
 }
 
@@ -88,16 +90,15 @@ header:hover::after {
   color: #255784;
   background: #2dd9fe;
   box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 10px 25px;
 }
 
-.navBar a:focus {
-  color: #255784;
+.navBar a:active {
+  /* color: #255784;
   background: #2dd9fe;
   box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe;
-  overflow: hidden;
-  padding: 10px 25px;
+  overflow: hidden; */
 }
 
 .icons {
@@ -119,21 +120,22 @@ header:hover::after {
 @media (max-width: 992px) {
   .header {
     /* top+buttom, right+left*/
-    padding: 1.3rem 5%;
+    padding: 1.1rem 5%;
   }
 }
 
 @media (max-width: 768px) {
   .header {
     /* top+buttom, right+left*/
-    padding: .8rem 5%;
+    padding: .6rem 5%;
   }
+
   .icons {
     /*display block then change to flex*/
     display: inline-flex;
   }
 
-  #check:checked ~ .icons #menuIcon {
+  #check:checked~.icons #menuIcon {
     display: none;
   }
 
@@ -141,7 +143,7 @@ header:hover::after {
     display: none;
   }
 
-  #check:checked ~ .icons #closeIcon {
+  #check:checked~.icons #closeIcon {
     display: block;
   }
 
@@ -163,14 +165,14 @@ header:hover::after {
     overflow: hidden;
   }
 
-  #check:checked ~ .navBar {
-    height: 16.8rem;
+  #check:checked~.navBar {
+    height: 16rem;
   }
 
   .navBar a {
     display: block;
     font-size: 1.1rem;
-    margin: 1.3rem 0;
+    margin: 1rem 0;
     text-align: center;
     opacity: 0;
     /*reposition axis Y*/
@@ -179,7 +181,7 @@ header:hover::after {
     transition: 0.3s ease;
   }
 
-  #check:checked ~ .navBar a {
+  #check:checked~.navBar a {
     transform: translateY(0);
     transition-delay: calc(0.05s * var(--i));
     opacity: 1;
