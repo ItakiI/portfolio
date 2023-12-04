@@ -30,6 +30,7 @@
   align-items: center;
   z-index: 100;
 }
+
 .navBar {
   z-index: 101;
 }
@@ -115,6 +116,3 @@ header:hover::after {
 #check {
   display: none;
 }
-
-
-
