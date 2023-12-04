@@ -6,52 +6,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="Querries/querries.css" />
   <title>myPortfolio</title>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="logo">Logo</a>
-    <input type="checkbox" id="check" />
-    <label for="check" class="icons">
-      <i class="bx bx-menu" id="menuIcon"></i>
-      <i class="bx bx-x" id="closeIcon"></i>
-    </label>
+ <header class="header">
+      <a href="#" class="logo">Logo</a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menuIcon"></i>
+        <i class="bx bx-x" id="closeIcon"></i>
+      </label>
 
-    <nav class="navBar">
-      <a href="#home" style="--i: 0">Home</a>
-      <a href="#" style="--i: 1">About</a>
-      <a href="#" style="--i: 2">Experience</a><a href="#" style="--i: 3">Contact</a>
-      <!-- <a href="#" style="--i: 4">myCV</a> -->
-    </nav>
-  </header>
+      <nav class="navBar">
+        <a href="#home" style="--i: 0">Home</a>
+        <a href="#about" style="--i: 1">About</a>
+        <a href="#" style="--i: 2">Experience</a>
+        <a href="#contact" style="--i: 3">Contact</a>
+      </nav>
+    </header>
+  <section class="container">
 
-  <main>
-    
+  
     <section id="home">
       <div class="homeContent">
-        <h1>Hi there! I'm taki</h1>
+        <h1>Hi there! I'm Taki</h1>
         <h3>Junior web developper</h3>
-        <p> passion and innovation defines my journey, confidently making my baby steps towards crafting digital
-          experiences that captivate and solutions that resonate . </p>
+        <p>
+          passion and innovation defines my journey, confidently making my
+          baby steps towards crafting digital experiences that captivate and
+          solutions that resonate .
+        </p>
         <div class="homeSM">
-          <a href="https://github.com/ItakiI" target='_blank'><i class='bx bxl-github'></i></a>
-          <a href="#" target='_blank'><i class='bx bxl-facebook-circle'></i></a>
-          <a href="#" target='_blank'><i class='bx bxl-instagram-alt'></i></a>
-          <a href="#" target='_blank'><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/ItakiI" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="#" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
         </div>
         <a href="#" class="btn"> My CV </a>
       </div>
+
       <div class="homeImage"></div>
     </section>
 
-    <section id="About">
-
+    <section id="about">
+      <div>
+        <h4></h4>
+      </div>
     </section>
 
-  </main>
-  <footer></footer>
+    <section id="contact">
+      <div class="contactMe">
+        <h2>Contact me!</h2>
+
+        <form action="#">
+          <div class="inputBox">
+            <div class="inputField field">
+              <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" />
+              <div class="errorText">Fullname can't be blank</div>
+            </div>
+            <div class="inputField field">
+              <input type="text" placeholder="Email address" id="email" class="item" autocomplete="off" />
+              <div class="errorText">Email Address can't be blank</div>
+            </div>
+          </div>
+          <div class="inputBox">
+            <div class="inputField field">
+              <input type="text" placeholder="Phone number" id="phone" class="item" autocomplete="off" />
+              <div class="errorText">Phone number can't be blank</div>
+            </div>
+            <div class="inputField field">
+              <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" />
+              <div class="errorText">Subject can't be blank</div>
+            </div>
+          </div>
+
+          <div class="textareaField field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item"
+              autocomplete="off">
+              </textarea>
+            <div class="errorText">Message can't be blank</div>
+          </div>
+
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </section>
+
+
+  <footer>
+
+
+
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Oxanium:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: #051e35fa;
+}
+
+.contactMe {
+    margin-top: 40px;
+}
+
+.contactMe h2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contactMe form {
+    width: 50vw;
+    min-width: 300px;
+    text-align: center;
+}
+
+form .inputBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #2daafe;
+    outline: none;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+
+.inputBox .inputField {
+    width: 48.5%;
+}
+
+form .textareaField .item {
+    resize: none;
+}
+
+form button {
+    padding: 10px 25px;
+    background: #2dd8fe76;
+    ;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 1px;
+    letter-spacing: .5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: white;
+    background: #2dd8fe76;
+    border: #2dd9fe;
+    box-shadow: 0 0 5px #2dd9fe, 0 0 15px #2dd9fe, 0 0 25px #2dd9fe;
+}
+
+.field .errorText {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5 0 10px;
+    display: none;
+}
+
+form .textareaField .errorText {
+    margin-top: -10px;
+}

@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Oxanium:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Oxanium:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
-main {
+.container {
     height: 100dvh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.container section {
+    height: 100dvh;
+    scroll-snap-align: start;
 }
 
 #home {
@@ -19,17 +33,17 @@ main {
 }
 
 .homeImage {
-    height: 400PX;
-    width: 400px;
-    background: red;
+    height: 30vw;
+    width: 30vw;
+    background: white;
     border-radius: 50%;
 }
 
 .homeContent {
-    max-width: 600px;
+    max-width: 47vw;
     color: white;
     text-align: left;
-    
+
 }
 
 .homeContent h1 {
@@ -43,20 +57,23 @@ main {
     /* add outline */
     -webkit-text-stroke: .4px white;
 }
+
 .homeContent p {
     font-size: 20px;
-    margin-top: 40px;
+    margin: 40px 10px 0 0;
     line-height: 30px;
 }
-.homeSM{
+
+.homeSM {
     margin: 35px 0 40px;
 }
+
 .homeSM a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 37px;
-    height:37px;
+    height: 37px;
     color: #06c4efe3;
     background: transparent;
     border: 2px solid white;
@@ -67,10 +84,10 @@ main {
 }
 
 .homeSM a:hover {
-   color: white;
-   background: #2dd8fe76;
-   border:#2dd9fe ;
-  box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe;
+    color: white;
+    background: #2dd8fe76;
+    border: #2dd9fe;
+    box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe;
 }
 
 .btn {
@@ -80,11 +97,12 @@ main {
     text-decoration: none;
     font-weight: 900;
     letter-spacing: .5px;
-    border-radius: 20px;    
+    border-radius: 20px;
 }
+
 .btn:hover {
     color: white;
     background: #2dd8fe76;
-    border:#2dd9fe ;
-   box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe, 0 0 20px #2dd9fe;
+    border: #2dd9fe;
+    box-shadow: 0 0 5px #2dd9fe, 0 0 10px #2dd9fe, 0 0 20px #2dd9fe;
 }
